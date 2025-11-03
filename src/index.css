@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:focus-visible {
+    outline: 2px solid #0ea5e9;
+    outline-offset: 2px;
+}
+
+:root { color-scheme: light dark; }
+
+html.theme-ready,
+html.theme-ready * {
+    transition-property: background-color, color, border-color, fill, stroke, box-shadow;
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(.2,.7,.2,1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html.theme-ready,
+    html.theme-ready * { transition: none !important; }
+}
+
+@page { size: A4 portrait; margin: 14mm; }
+@media print {
+    html { color-scheme: light; }
+    body {
+        background: #fff !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    .no-print { display: none !important; }
+    * { box-shadow: none !important; text-shadow: none !important; }
+    .avoid-break { break-inside: avoid; page-break-inside: avoid; }
+}
+
+@layer base {
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    select:-webkit-autofill {
+        -webkit-text-fill-color: #111827;
+        -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+        transition: background-color 9999s ease-in-out 0s;
+        caret-color: #111827;
+    }
+    .dark input:-webkit-autofill,
+    .dark textarea:-webkit-autofill,
+    .dark select:-webkit-autofill {
+        -webkit-text-fill-color: #0a0a0a;
+        -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+        caret-color: #0a0a0a;
+    }
+
+    input:not([type="checkbox"]),
+    textarea,
+    select {
+        -webkit-appearance: none;
+        appearance: none;
+        color-scheme: light;
+    }
+}
