@@ -18,6 +18,7 @@ Focused on UI/UX, accessibility (A11y), form validation, mock API consumption, c
 - **Theme**: Light/Dark **switch** (persistent, system preference)
 - **Accessibility**: ARIA roles + **keyboard support** (navigate with ↓/↑, select with **Enter**, close with **Esc**)
 - **Tests**: Vitest + Testing Library (unit) and **Playwright** (E2E)
+- **Design**: TailwindCSS + lucide-react **UI RESPONSIVE MOBILE & DESKTOP**
 
 - **Arama**: Kalkış/Varış (dropdown), tarih (gelecek gün), validasyon (Kalkış≠Varış, tarih zorunlu)
 - **Sefer Listesi**: Kart görünümü, **sıralama** (Fiyat ↑/↓, Saat Erken/Geç), **filtre** (Firma)
@@ -29,6 +30,7 @@ Focused on UI/UX, accessibility (A11y), form validation, mock API consumption, c
 - **Tema**: Light/Dark **switch** (kalıcı, system preference)
 - **Erişilebilirlik**: ARIA rolleri + **klavye desteği** (↓/↑ ile gezin, **Enter** seç, **Esc** kapat)
 - **Testler**: Vitest + Testing Library (unit) ve **Playwright** (E2E)
+- **Tasarım**: TailwindCSS + lucide-react   **UI RESPONSİVE MOBİL VE MASAÜSTÜ** 
 ---
 
 

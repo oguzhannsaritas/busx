@@ -1,3 +1,4 @@
 dist/
 .vite/
 coverage/
+node_modules/
